@@ -71,8 +71,9 @@ else
 fi
 
 # GNU gettext
-AM_GNU_GETTEXT
+AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION(0.19.8)
+AM_GNU_GETTEXT_REQUIRE_VERSION(0.19.8)
 
 # directory containing configuration support files
 # defaults to package root
@@ -98,7 +99,6 @@ AC_SUBST(DMALLOC_LIBS)
 
 AC_CONFIG_FILES([Makefile
 		 doc/Makefile
-		 intl/Makefile
 		 po/Makefile.in
 		 src/Makefile
 		 testsuite/Makefile])
